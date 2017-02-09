@@ -1,14 +1,25 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package model;
 
 /**
  *
- * @author usuario
+ * @author dpMelian
  */
-public class Person {
+public class Person extends Contact{
+    private String firstName;
+    private String lastName;
+    private String telephone;
+    private String email;
+
+    public Person(String firstName, String lastName, String telephone, String email) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.telephone = telephone;
+        this.email = email;
+    }
     
+    
+    
+    public String getName(){
+        return (firstName+ " " +lastName);
+    }
 }
