@@ -1,13 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package agendaapp;
+import model.Agenda;
 
 /**
  *
- * @author usuario
+ * @author dpMelian
  */
 public class AgendaApp {
 
@@ -15,7 +11,8 @@ public class AgendaApp {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Agenda agenda = new Agenda();
+        agenda.addPerson("Pepe", "Santana", "12345", "pepe.gmail");
+        System.out.println(agenda.contacts.get(0).getName());
     }
-    
 }
