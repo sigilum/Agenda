@@ -22,7 +22,6 @@ public abstract class Contact {
         this.address = address;
     }
     
-
     public String getTelephone() {
         return telephone;
     }
@@ -30,6 +29,7 @@ public abstract class Contact {
     public String getEmail() {
         return email;
     }
+    
     public abstract String getName();
     
 }

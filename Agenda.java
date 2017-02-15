@@ -10,8 +10,8 @@ public class Agenda {
     public ArrayList<Contact>contacts;
     public ArrayList<Group>groups;
     public Agenda(){
-        contacts=new ArrayList<Contact>();
-        groups=new ArrayList<Group>();
+        contacts = new ArrayList<Contact>();
+        groups = new ArrayList<Group>();
     }
     public void addPerson(String firstName, String lastName, String telephone,
             String email){
@@ -25,5 +25,23 @@ public class Agenda {
     }
     public void addGroup(String name){
         groups.add(new Group(name));
+    }
+    public void removePerson(int pos){
+        contacts.remove(pos);
+    }
+    public void removeCompany(int pos){
+        contacts.remove(pos);
+    }
+    public void removeGroup(int pos){
+        groups.remove(pos);
+    }
+    public void removePerson(Contact person){
+        contacts.remove(person);
+    }
+    public void removeCompany(Contact company){
+        contacts.remove(company);
+    }
+    public void removeGroup(Group group){
+        groups.remove(group);
     }
 }

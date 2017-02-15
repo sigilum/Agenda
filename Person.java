@@ -17,8 +17,6 @@ public class Person extends Contact{
         this.email = email;
     }
     
-    
-    
     public String getName(){
         return (firstName+ " " +lastName);
     }

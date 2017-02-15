@@ -17,11 +17,10 @@ public class Company extends Contact{
         this.email = email;
     }
     
-    
-    
     public String getName(){
         return name;
     }
+    
     public String getDescription(){
         return description;
     }
